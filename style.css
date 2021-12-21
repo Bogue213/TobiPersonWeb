@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.Insides{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/biri.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}   
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-style: italic;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.5s;
+}
+nav ul li a:hover::after{
+    width: 90%;
+}
+.descriptions{
+    color: #fff;
+    position: absolute ;
+    top: 25%;
+    right: 15%;
+}
+.descriptions h1{
+    font-size: 200%;
+    line-height: 60px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.descriptions h2{
+    font-style: italic;
+    font-size: 10pt;
+    outline-style: groove;
+}
+.box{
+    width: 450px;
+    background: rgba(0,0,0,0.4);
+    padding: 20px;
+    text-align: left;
+    margin: auto;
+    margin-top: 1%;
+    margin-left: 3%;
+    color: white;
+    font-family: Century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.box h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 27pt;
+    line-height: 50px;
+}
+.box p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.socmed{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.socmed1{
+    background-image: url(images/fbimg.jpg);
+}
+.socmed2{
+    background-image: url(images/IGimg.jpg);
+}
+.socmed3{
+    background-image: url(images/Twitimg.jpg);
+}
+.socmed4{
+    background-image: url(images/redimg.jpg);
+}
+.socmed h3{
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 125%;
+    text-shadow: 0 0 5px #000;
+}
+.socmed p{
+    color: #fff;
+    outline: rgb(0, 0, 0);
+    font-size: 110%;
+    text-shadow: 0 0 5px #000;
+}
+.socmed:hover{
+    transform: translateY(-15px);
+}
